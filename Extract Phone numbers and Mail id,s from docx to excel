@@ -1,0 +1,53 @@
+import docx2txt
+import re
+import os
+import xlsxwriter
+import zipfile
+
+def find_emails_and_phones(text):
+    emails = re.finditer(r'[a-zA-Z0-9-\.]+@[a-zA-Z-\.]*\.(com|edu|net)', text)
+    phones = re.finditer(r'\d{10}', text)
+    return emails, phones
+
+def extract_text_from_docx(docx_path):
+    try:
+        text = docx2txt.process(docx_path)
+        return text
+    except zipfile.BadZipFile:
+        print(f"Error: {docx_path} is not a valid DOCX file.")
+        return None
+
+def create_excel_file(data):
+    workbook = xlsxwriter.Workbook('Resume1.xlsx')
+    worksheet = workbook.add_worksheet()
+    worksheet.write(0, 0, 'Email')
+    worksheet.write(0, 1, 'Phone')
+    worksheet.write(0, 2, 'Text')
+    row = 1
+    for email, phone, text in data:
+        worksheet.write(row, 0, email)
+        worksheet.write(row, 1, phone)
+        worksheet.write(row, 2, text)
+        row += 1
+    workbook.close()
+
+def process_all_docx_files(directory):
+    data = []
+    for filename in os.listdir(directory):
+        if filename.endswith('.docx'):
+            docx_path = os.path.join(directory, filename)
+            text = extract_text_from_docx(docx_path)
+            if text is not None:
+                emails, phones = find_emails_and_phones(text)
+                try:
+                    email_str = next(emails).group()
+                except StopIteration:
+                    email_str = ''
+                try:
+                    phone_str = next(phones).group()
+                except StopIteration:
+                    phone_str = ''
+                data.append((email_str, phone_str, text))
+    create_excel_file(data)     
+
+process_all_docx_files('C:/Users/vicke/OneDrive/Desktop/Python intern')
