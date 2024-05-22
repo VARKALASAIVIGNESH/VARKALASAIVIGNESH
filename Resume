@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vignesh Resume</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <h1>Varkala Sai Vignesh</h1>
+        <hr>
+        <h3 padding="20px">Python Developer</h3>
+    </header>
+    <main class="container">
+        <article id="mainLeft">
+            <section>
+                <h3>Contact</h3>
+                <img src="https://th.bing.com/th/id/R.3ea5d09ed6d30dbf6f1f4871e5e4c788?rik=0iGQR9DRLKii1w&riu=http%3a%2f%2fpluspng.com%2fimg-png%2femail-icon-png-email-icon-2048.png&ehk=ahnNwHNab9Dq7qF3w%2fPChLDTTN3R5mvMWkD739gMXIg%3d&risl=&pid=ImgRaw&r=0" class="inline-block1" height="40px" width="40px" alt="email me at">
+                <p class="inline-block1"><a href="mailto:vickeyvignesh775@gmail.com">vickeyvignesh775@gmail.com</a></p>
+                <br>
+                <img src="https://icon-library.com/images/official-linkedin-icon-png/official-linkedin-icon-png-12.jpg" class="inline-block2" width="40px" height="40px" alt="reach me at">
+                <p class="inline-block2"><a href="www.linkedin.com/in/sai-vignesh-63422023a">LinkedIn Profile</a></p>
+                <br>
+            </section>
+            <section>
+            <div class ="skills">
+               <h3>Skills</h3>
+               <p>Python</p>
+               <p>HTML & CSS</p>
+               <p>Gen AI</p>
+               <p>Communication Skills</p>
+               <p>Leadership and Management skills</p>
+               <p>Time Management Skills</p>
+               <br>
+             </div>
+            </section>
+            <section>
+                <h3>Certifications</h3>
+                <p>Project Management from Coursera</p>
+                <p>HTML and CSS - Coursera</p>
+                <p>Python for Everybody</p>
+                <br>
+            </section>
+            <section>
+            <div class="languages">
+               <h3>Languages</h3>
+               <p>Hindi</p>
+               <p>Telugu</p>
+               <p>English</p>
+            </div>
+               <br>
+            </section>
+        </article>
+        <article id="mainRight">
+            <section>
+                <h2>Work Experience</h2>
+                <h3>Solution Graph- HR</h3>
+                <small>January 2024 - March 2024</small>
+                <p>During my internship at Solutions Graph, I served 
+                as an HR professional, I organized and conducted an aptitude test for candidates to evaluate their skills and suitability for the role. Coordinating the logistics, I ensured a smooth setup with all necessary materials and a quiet environment. I greeted the candidates, provided clear instructions, and monitored the test to maintain integrity. Post-test, I collected and reviewed the results meticulously, identifying the top performers. This process helped streamline our recruitment, ensuring we selected the most capable individuals.
+</p>
+                <h3>CodeSoft</h3>
+                <h4>Present</h4>
+                <p>At Codesoft, I work as a basic Python developer where I contribute to various projects involving web development and automation. I write clean and efficient code for small-scale applications. My tasks include writing  scripts, and collaborating with senior developers on code reviews. Additionally, I gain experience in using Git . This role helps me build a solid foundation in Python programming and software development methodologies.</p>
+                        <h2>Education</h2>
+                        <h4>Malla Reddy College of Engineering and Technology,
+                            Hyderabad — Computer Science and information technology</h4>
+                        <sub>November 2022 - April 2026</sub>
+                        <p>I have a CGPA of 9.2 in my college.</p>
+                        <h4>Vishwabharathi Junior College, Shadnagar— MPC</h4>
+                        <small>March 2020 - April 2022</small>
+                        <p>I have scored 8.2 during my intermediate</p>
+                        <h4>St.Mary's School,Shadnagar — Schooling</h4>
+                        <small>June 2009 - May 2020</small>
+                        <p>I have scored 100% in my school boards</p>
+            </section>
+        </article>
+    </main>
+    <style>
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+#mainLeft, #mainRight {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+}
+.skills p, .languages p {
+    display: inline-block;
+    margin-right: 10px;
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+img{
+    text-align: left;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    margin-bottom: 0;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.inline-block, .inline-block1, .inline-block2 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.inline-block1, .inline-block2 {
+    margin-left: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 5px 0;
+    text-align: justify;
+}
+ul {
+    text-align: justify;
+}
+    </style>
+</body>
+</html>
