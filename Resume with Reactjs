@@ -1,0 +1,152 @@
+import React from 'react';
+import './App.css';
+import emailIcon from './email-icon.png'; // You can download and save the image in the src folder
+import linkedinIcon from './linkedin-icon.png'; // You can download and save the image in the src folder
+
+function App() {
+  return (
+    <div className="App">
+      <header id="header">
+        <h1>Varkala Sai Vignesh</h1>
+        <hr />
+        <h3 style={{ padding: '20px' }}>Python Developer</h3>
+      </header>
+      <main className="container">
+        <article id="mainLeft">
+          <section>
+            <h3>Contact</h3>
+            <div className="contact-item">
+              <img src={emailIcon} className="icon" alt="email" />
+              <p><a href="mailto:vickeyvignesh775@gmail.com">vickeyvignesh775@gmail.com</a></p>
+            </div>
+            <div className="contact-item">
+              <img src={linkedinIcon} className="icon" alt="LinkedIn" />
+              <p><a href="https://www.linkedin.com/in/sai-vignesh-63422023a">LinkedIn Profile</a></p>
+            </div>
+          </section>
+          <section className="skills">
+            <h3>Skills</h3>
+            <p>Python</p>
+            <p>HTML & CSS</p>
+            <p>Gen AI</p>
+            <p>Communication Skills</p>
+            <p>Leadership and Management skills</p>
+            <p>Time Management Skills</p>
+          </section>
+          <section>
+            <h3>Certifications</h3>
+            <p>Project Management from Coursera</p>
+            <p>HTML and CSS - Coursera</p>
+            <p>Python for Everybody</p>
+          </section>
+          <section className="languages">
+            <h3>Languages</h3>
+            <p>Hindi</p>
+            <p>Telugu</p>
+            <p>English</p>
+          </section>
+        </article>
+        <article id="mainRight">
+          <section>
+            <h2>Work Experience</h2>
+            <h3>Solution Graph- HR</h3>
+            <small>January 2024 - March 2024</small>
+            <p>During my internship at Solutions Graph, I served as an HR professional...</p>
+            <h3>CodeSoft</h3>
+            <h4>Present</h4>
+            <p>At Codesoft, I work as a basic Python developer...</p>
+            <h2>Education</h2>
+            <h4>Malla Reddy College of Engineering and Technology, Hyderabad — Computer Science and Information Technology</h4>
+            <sub>November 2022 - April 2026</sub>
+            <p>I have a CGPA of 9.2 in my college.</p>
+            <h4>Vishwabharathi Junior College, Shadnagar— MPC</h4>
+            <small>March 2020 - April 2022</small>
+            <p>I have scored 8.2 during my intermediate.</p>
+            <h4>St.Mary's School, Shadnagar — Schooling</h4>
+            <small>June 2009 - May 2020</small>
+            <p>I have scored 100% in my school boards.</p>
+          </section>
+        </article>
+      </main>
+    </div>
+  );
+}
+
+export default App;
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  .container {
+    display: flex;
+    gap: 10px;
+  }
+  
+  #mainLeft, #mainRight {
+    flex: 1;
+    padding: 15px;
+    border: none;
+    background-color: transparent;
+  }
+  
+  .skills p, .languages p {
+    display: inline-block;
+    margin-right: 10px;
+    background: #e0e0e0;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  h1 {
+    margin-bottom: 0;
+  }
+  
+  hr {
+    margin: 10px 0;
+  }
+  
+  h3 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    margin-right: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  p {
+    margin: 5px 0;
+    text-align: justify;
+  }
+  
+  ul {
+    text-align: justify;
+  }
+  
